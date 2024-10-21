@@ -1,0 +1,28 @@
+extends layout
+
+block content   
+  link(rel="stylesheet", href="/assests/css/login.css")
+
+
+
+  .warpper
+    .form-box.login
+      h2 Login
+      form(action="/Transli" method="post")
+        .input-box
+          span.icon
+          input(type="email" required)
+          label Email
+        .input-box
+          span.icon
+          input(type="password" required)
+          label Password
+        .remember-forgot
+          label
+            input(type="checkbox")
+            | Remember me
+          a(href="#") Forgot Password?
+        button.btn(type="submit") Login
+        .login-register
+          p Don't have an account?
+            a.register-link(href="/dashboard") Register

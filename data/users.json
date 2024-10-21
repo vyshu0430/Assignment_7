@@ -1,0 +1,27 @@
+[
+  {
+    "username": "abc",
+    "email": "amruthapeddi6@gmail.com",
+    "password": "$2b$10$H3gUB7ym6M1y4Y24gGfDb.ugymNEhuyS6XsKAyL6HqTIYMwM/3U7."
+  },
+  {
+    "username": "def",
+    "email": "221fa04690@gmail.com",
+    "password": "$2b$10$pO0m1NiE.xL/iol4Ln/fWOfjo24ycKVx69RPEZBIFG0Wca8M4506."
+  },
+  {
+    "username": "Amrutha Peddi",
+    "email": "bandlachowdarygowthami@gmail.com",
+    "password": "$2b$10$x.6Jj59ss3rUosF5.OK9i.qjyZQ451z72GhHcB/cir1kR/2rmQOoS"
+  },
+  {
+    "username": "qwe",
+    "email": "221fa04690@gmail.com",
+    "password": "$2b$10$np1yJixnCfA47wnrTV2St.2yJ5GxrGnHVsuzF3PPJ2ezB0ltfEWoe"
+  },
+  {
+    "username": "qwww",
+    "email": "221fa04690@gmail.com",
+    "password": "qwe"
+  }
+]

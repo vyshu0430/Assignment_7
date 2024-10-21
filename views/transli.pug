@@ -1,0 +1,62 @@
+extends layout
+
+block head
+  link(rel="stylesheet", href="/assests/css/transli.css")
+
+block content
+  .container
+    h1 TRANSLI
+    label(for="source-language") Source Language:
+    select#source-language
+      option(value="en") English
+      option(value="fr") French
+      option(value="es") Spanish
+      // Add more language options here
+    
+    label(for="target-language") Target Language:
+    select#target-language
+      option(value="en") English
+      option(value="fr") French
+      option(value="es") Spanish
+      option(value="de") German
+      option(value="it") Italian
+      option(value="pt") Portuguese
+      option(value="nl") Dutch
+      option(value="ru") Russian
+      option(value="ja") Japanese
+      option(value="zh-CN") Chinese (Simplified)
+      option(value="ko") Korean
+      option(value="ar") Arabic
+      option(value="tr") Turkish
+      // Add more language options here
+    
+    label(for="input-text") Input Text:
+    textarea#input-text(rows="4", cols="50")
+    
+    button(onclick="translateText()") Translate
+    
+    label(for="output-text") Translated Text:
+    textarea#output-text(rows="4", cols="50", readonly)
+
+  script.
+    async function translateText() {
+      const sourceLanguage = document.getElementById("source-language").value;
+      const targetLanguage = document.getElementById("target-language").value;
+      const inputText = document.getElementById("input-text").value;
+
+      const url = `https://api.mymemory.translated.net/get?q=${encodeURIComponent(inputText)}&langpair=${sourceLanguage}|${targetLanguage}`;
+
+      try {
+        const response = await fetch(url);
+        const data = await response.json();
+
+        if (data.responseData && data.responseData.translatedText) {
+          document.getElementById("output-text").value = data.responseData.translatedText;
+        } else {
+          document.getElementById("output-text").value = "Translation failed. Please try again.";
+        }
+      } catch (error) {
+        console.error("Translation failed:", error);
+        document.getElementById("output-text").value = "Translation failed. Please try again.";
+      }
+    }

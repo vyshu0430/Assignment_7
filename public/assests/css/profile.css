@@ -1,0 +1,534 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  body{
+    background: rgba(0, 0, 0, 0.7) url('transli-5.jpg') center center fixed;
+    background-image: url('https://i.pinimg.com/originals/70/b2/72/70b27221c059975449218aee59ffbdad.gif'); 
+    background-size: cover;
+    background-blend-mode: darken;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  header {
+    width: 100%;
+    background-color: #514c49;
+    padding: 20px 0;
+  }
+  
+  .header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    color:rgb(255, 255, 255)
+  }
+  
+  header h1 {
+    font-size: 24px;
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  header nav ul li {
+    margin-right: 20px;
+  }
+  
+  header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  header nav ul li a:hover {
+    text-decoration: underline;
+  }
+  .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .container h1{
+    color: rgb(255, 0, 0);
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  .navbar ul li{
+    display: inline-block;
+    padding: 18px;
+    text-transform: uppercase;
+  }
+  
+  .navbar ul li a{
+    text-decoration:none;
+    color: #fefefe;
+    padding: 4px;
+    transition: 3.5s;
+    
+  }
+  
+  .navbar ul li a:hover{
+    box-shadow: 0 3px 50px rgb(255, 0, 0) inset,0 3px 50px rgb(255, 0, 0) inset,
+    0 3px 50px rgb(255, 0, 0) inset,0 3px 50px rgb(255, 0, 0) inset;
+  }
+
+
+
+ body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        .profile-container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #ffe9e9;
+        }
+        .profile-details {
+            margin-top: 20px;
+        }
+        .profile-details p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .profile-details span {
+            font-weight: bold;
+        }
+        .logout-button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .logout-button:hover {
+            background-color: #0056b3;
+        }
+
+
+
+
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+      }
+
+      body {
+          font-family: 'Poppins', sans-serif;
+          background-color: #f4f4f9;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+      }
+
+      .profile-card {
+          background-color: #fff;
+          border-radius: 15px;
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+          max-width: 500px;
+          padding: 30px;
+          text-align: center;
+          transition: transform 0.2s;
+      }
+
+      .profile-card:hover {
+          transform: translateY(-10px);
+      }
+
+      .profile-picture {
+          width: 120px;
+          height: 120px;
+          border-radius: 50%;
+          margin-bottom: 20px;
+          object-fit: cover;
+          border: 4px solid #007bff;
+      }
+
+      h2 {
+          margin-bottom: 10px;
+          font-size: 24px;
+          color: #333;
+      }
+
+      .profile-info {
+          font-size: 16px;
+          color: #555;
+          margin-bottom: 20px;
+      }
+
+      .profile-info span {
+          font-weight: bold;
+          color: #007bff;
+      }
+
+      .edit-profile-btn {
+          background-color: #007bff;
+          color: white;
+          border: none;
+          border-radius: 30px;
+          padding: 10px 20px;
+          cursor: pointer;
+          font-size: 16px;
+          transition: background-color 0.3s;
+      }
+
+      .edit-profile-btn:hover {
+          background-color: #0056b3;
+      }
+
+      .logout-btn {
+          margin-top: 20px;
+          background-color: #ff4d4d;
+          color: white;
+          border: none;
+          border-radius: 30px;
+          padding: 10px 20px;
+          cursor: pointer;
+          font-size: 16px;
+          transition: background-color 0.3s;
+      }
+
+      .logout-btn:hover {
+          background-color: #e60000;
+      }
+
+      @media (max-width: 600px) {
+          .profile-card {
+              padding: 20px;
+          }
+          h2 {
+              font-size: 20px;
+          }
+          .profile-info {
+              font-size: 14px;
+          }
+          .edit-profile-btn, .logout-btn {
+              font-size: 14px;
+              padding: 8px 16px;
+          }
+      }
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .profile-card {
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            padding: 30px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+
+        .profile-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .profile-picture {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            object-fit: cover;
+            border: 4px solid #007bff;
+        }
+
+        h2 {
+            margin-bottom: 10px;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .profile-info {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .profile-info span {
+            font-weight: bold;
+            color: #007bff;
+        }
+
+        .edit-profile-btn {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .edit-profile-btn:hover {
+            background-color: #0056b3;
+        }
+
+        .logout-btn {
+            margin-top: 20px;
+            background-color: #ff4d4d;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .logout-btn:hover {
+            background-color: #e60000;
+        }
+
+        /* Hidden form for updating the profile */
+        .edit-form {
+            display: none;
+            margin-top: 20px;
+            text-align: left;
+        }
+
+        .edit-form label {
+            font-size: 14px;
+            margin-bottom: 5px;
+            display: block;
+            color: #333;
+        }
+
+        .edit-form input[type="text"],
+        .edit-form input[type="email"],
+        .edit-form input[type="file"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .edit-form .submit-btn {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.3s;
+        }
+
+        .edit-form .submit-btn:hover {
+            background-color: #0056b3;
+        }
+
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+      }
+
+      body {
+          font-family: 'Poppins', sans-serif;
+          background-color: #f4f4f9;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+      }
+
+      .profile-card {
+          background-color: #fff;
+          border-radius: 15px;
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+          max-width: 500px;
+          padding: 30px;
+          text-align: center;
+          transition: transform 0.2s;
+      }
+
+      .profile-card:hover {
+          transform: translateY(-10px);
+      }
+
+      .profile-picture {
+          width: 120px;
+          height: 120px;
+          border-radius: 50%;
+          margin-bottom: 20px;
+          object-fit: cover;
+          border: 4px solid #007bff;
+      }
+
+      h2 {
+          margin-bottom: 10px;
+          font-size: 24px;
+          color: #333;
+      }
+
+      .profile-info {
+          font-size: 16px;
+          color: #555;
+          margin-bottom: 20px;
+      }
+
+      .profile-info span {
+          font-weight: bold;
+          color: #007bff;
+      }
+
+      .edit-profile-btn {
+          background-color: #007bff;
+          color: white;
+          border: none;
+          border-radius: 30px;
+          padding: 10px 20px;
+          cursor: pointer;
+          font-size: 16px;
+          transition: background-color 0.3s;
+      }
+
+      .edit-profile-btn:hover {
+          background-color: #0056b3;
+      }
+
+      .logout-btn {
+          margin-top: 20px;
+          background-color: #ff4d4d;
+          color: white;
+          border: none;
+          border-radius: 30px;
+          padding: 10px 20px;
+          cursor: pointer;
+          font-size: 16px;
+          transition: background-color 0.3s;
+      }
+
+      .logout-btn:hover {
+          background-color: #e60000;
+      }
+
+      /* Hidden form for updating the profile */
+      .edit-form {
+          display: none;
+          margin-top: 20px;
+          text-align: left;
+      }
+
+      .edit-form label {
+          font-size: 14px;
+          margin-bottom: 5px;
+          display: block;
+          color: #333;
+      }
+
+      .edit-form input[type="text"],
+      .edit-form input[type="email"],
+      .edit-form input[type="file"] {
+          width: 100%;
+          padding: 8px;
+          margin-bottom: 15px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+      }
+
+      .edit-form .submit-btn {
+          background-color: #007bff;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          padding: 10px 15px;
+          cursor: pointer;
+          font-size: 14px;
+          transition: background-color 0.3s;
+      }
+
+      .edit-form .submit-btn:hover {
+          background-color: #0056b3;
+      }
+  /* Footer Styles */
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Makes sure footer stays at the bottom */
+  }
+  
+  main {
+    flex: 1; /* This allows the main content to take up the available space */
+  }
+  
+  footer {
+    width: 100%;
+    background-color: #333;
+    padding: 20px 0;
+    color: rgb(244, 244, 244);
+    text-align: center;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  footer ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  footer ul li {
+    margin-left: 20px;
+  }
+  
+  footer ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  footer ul li a:hover {
+    text-decoration: underline;
+  }

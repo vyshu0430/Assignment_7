@@ -1,0 +1,32 @@
+extends layout
+
+block content
+  link(rel="stylesheet", href="/assests/css/dashboard.css")
+  .table-container
+    h2 Registered Users
+    table#userTable
+      thead
+        tr
+          th Username
+          th Email
+      tbody
+        // User details will be appended here
+
+  script(src="/assests/js/dashboard.js")
+
+
+
+
+//- extends layout
+
+//- block content
+//-   link(rel="stylesheet", href="/assests/css/dashboard.css")
+
+//-   .dashboard-container
+//-     h2 Welcome, #{user.username}!
+
+//-     p Username: #{user.username}
+//-     p Email: #{user.email}
+
+//-     // Option to update profile details
+//-     a(href="/update-profile") Update your profile

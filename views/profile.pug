@@ -1,0 +1,82 @@
+//- profile.pug
+//- extends layout.pug
+
+//- block content
+
+//- link(rel="stylesheet", href="/assests/css/profile.css")
+//-     header
+//-         div.header-container
+//-             h1 Translator Website
+//-         div.container
+//-             div.navbar
+//-                 ul
+//-                     li: a(href='home.html') HOME
+//-                     li: a(class='reservation', href='login.html') LOGIN
+//-                     li: a(href='Transli.html') TRANSLI
+//-                     li: a(href='registration.html') Registration
+//-                     li: a(href='contact.html') CONTACT
+//-                     li: a(href='about.html') ABOUT
+//-                     li: a(href='dashboard.html') Dashboard
+//-                     li: a(href='profile.html') Profile
+
+//-     //- Profile Card
+//-     .profile-card
+//-         img(src='path-to-default-profile-picture.jpg', alt='Profile Picture', class='profile-picture', id='profilePic')
+//-         h2(id='usernameDisplay') John Doe
+//-         p.profile-info
+//-             span Email:
+//-             span(id='emailDisplay') john@example.com
+//-         p.profile-info
+//-             span Account Type:
+//-             span Premium User
+//-         button.edit-profile-btn(id='editProfileButton') Edit Profile
+//-         button.logout-btn(id='logoutButton') Logout
+
+//-         form.edit-form(id='editProfileForm')
+//-             label(for='newUsername') Update Username
+//-             input(type='text', id='newUsername', placeholder='Enter new username')
+//-             label(for='newEmail') Update Email
+//-             input(type='email', id='newEmail', placeholder='Enter new email')
+//-             label(for='newProfilePic') Update Profile Picture
+//-             input(type='file', id='newProfilePic', accept='image/*')
+//-             button.submit-btn(type='submit') Save Changes
+
+//-     footer
+//-         div.footer-container
+//-             p &copy; 2024 Translator Website | All Rights Reserved
+
+//-     script(src='/assests/js/profile.js')
+
+
+
+
+extends layout
+
+block head
+    link(rel="stylesheet", href="/assests/css/profile.css")
+
+block content
+    //- Profile Card
+    .profile-card
+        img(src='path-to-default-profile-picture.jpg', alt='Profile Picture', class='profile-picture', id='profilePic')
+        h2(id='usernameDisplay') John Doe
+        p.profile-info
+            span Email:
+            span(id='emailDisplay') john@example.com
+        p.profile-info
+            span Account Type:
+            span Premium User
+        button.edit-profile-btn(id='editProfileButton') Edit Profile
+        button.logout-btn(id='logoutButton') Logout
+
+        form.edit-form(id='editProfileForm')
+            label(for='newUsername') Update Username
+            input(type='text', id='newUsername', placeholder='Enter new username')
+            label(for='newEmail') Update Email
+            input(type='email', id='newEmail', placeholder='Enter new email')
+            label(for='newProfilePic') Update Profile Picture
+            input(type='file', id='newProfilePic', accept='image/*')
+            button.submit-btn(type='submit') Save Changes
+
+    //- Include the script directly without using block scripts
+    script(src='/assests/js/profile.js')
